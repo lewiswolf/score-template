@@ -1,7 +1,7 @@
 % spell-checker: disable
 % spellchecker: disable
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{score}[Lewis Wolstanholme Compositions]
+\ProvidesClass{style/score}[Lewis Wolstanholme Compositions]
 \LoadClass{report}
 
 % Packages

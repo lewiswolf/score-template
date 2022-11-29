@@ -1,8 +1,8 @@
 % spell-checker: disable
 % spellchecker: disable
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{score-personal}[Lewis Wolstanholme Compositions]
-\LoadClass{score}
+\ProvidesClass{style/score-personal}[Lewis Wolstanholme Compositions]
+\LoadClass{style/score}
 
 % Layout Specific Packages
 \RequirePackage{xcolor}						% change font color with \textcolor{color}{text}
