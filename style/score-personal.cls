@@ -41,7 +41,7 @@
 		% margins
 		\newgeometry{top=-8pt, right=0pt, left=0pt, bottom=0pt}
 		% colour & shapes
-		\definecolor{bg}{RGB}{34, 32, 32}
+		\definecolor{bg}{RGB}{34, 34, 34}
 		\pagecolor{bg}
 		\color{white}
 		\squares
@@ -56,13 +56,13 @@
 			\bf \@title
 		\end{textblock*}
 		% instrumentation
-		\begin{textblock*}{104mm + 13pt}(0.5\paperwidth - 52mm - 6.5pt, 0.5\paperheight - 15pt)
-			\fontsize{17pt}{0}
-			\bf \@instrumentation
+		\begin{textblock*}{104mm + 14pt}(0.5\paperwidth - 52mm - 6.5pt, 0.5\paperheight - 12.5pt)
+			\fontsize{16.75pt}{0}
+			\bf \openup 0.25em \@instrumentation
 		\end{textblock*}
 		% date
-		\begin{textblock*}{104mm + 7pt}(0.5\paperwidth - 52mm,0.5\paperheight + 52mm - 12.5pt)
-			\fontsize{15pt}{0}
+		\begin{textblock*}{104mm + 7pt}(0.5\paperwidth - 52mm,0.5\paperheight + 52mm - 14.5pt)
+			\fontsize{14pt}{0}
 			\flushright \bf \@date
 		\end{textblock*}
 		% reset
@@ -82,4 +82,3 @@
 	\addtocounter{page}{-1}
 	\newpage
 }
-

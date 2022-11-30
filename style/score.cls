@@ -6,17 +6,23 @@
 
 % Packages
 \RequirePackage[margin=2cm]{geometry}
-\RequirePackage[utf8]{inputenc}			 	% ASCII encoding
-\RequirePackage[english]{babel}				% use this to add extra languages
-\RequirePackage[T1]{fontenc}				% font encoding
-\RequirePackage{lmodern}					% default font
-\RequirePackage{amssymb}					% maths
-\RequirePackage{mathtools}				  	% maths
-\RequirePackage[none]{hyphenat}			 	% less word breaks more kerning
-\RequirePackage{graphicx}					% import images with \includegraphics{filepath}
-\RequirePackage{pdfpages}					% include pdfs with \includepdf{link}
-\RequirePackage[absolute,overlay]{textpos}	% absolute text positioning
+\RequirePackage[utf8]{inputenc}			 				% ASCII encoding
+\RequirePackage[english]{babel}							% use this to add extra languages
+\RequirePackage[T1]{fontenc}							% font encoding
+\RequirePackage{lmodern}								% default font
+\RequirePackage{amssymb}								% maths
+\RequirePackage{mathtools}				  				% maths
+\RequirePackage[none]{hyphenat}			 				% less word breaks more kerning
+\RequirePackage[skip=\baselineskip,indent=0pt]{parskip}	% paragraph skip formatting
+\RequirePackage[absolute,overlay]{textpos}				% absolute text positioning
+\RequirePackage{enumitem}								% list formatting
+\RequirePackage{graphicx}								% import images with \includegraphics{filepath}
+\RequirePackage{pdfpages}								% include pdfs with \includepdf{link}
 
+% default list format
+\setlist{nosep}
+
+% macro for creating an empty page
 \newcommand*{\emptypage}{%
 	\newpage
     \null
