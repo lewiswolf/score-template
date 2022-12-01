@@ -2,16 +2,19 @@
 % spellchecker: disable
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{style/score-personal}[Lewis Wolstanholme Compositions]
-\LoadClass{style/score}
 
 % Layout Specific Packages
 \RequirePackage{xcolor}						% change font color with \textcolor{color}{text}
 \RequirePackage[scaled=1]{helvet}			% helvetica
 \RequirePackage{tikz}						% drawing graphics
 
-% Default Font
-\renewcommand*{\familydefault}{\sfdefault}
-
+% Paper Size
+\newcommand*{\PaperSize}{a4paper}
+\DeclareOption{a4paper}{\renewcommand*{\PaperSize}{a4paper}}
+\DeclareOption{a3paper}{\renewcommand*{\PaperSize}{a3paper}}
+% Paper Orientation
+\newcommand*{\PaperOrientation}{portrait}
+\DeclareOption{landscape}{\renewcommand*{\PaperSize}{landscape}}
 % Cover Colours
 \definecolor{off_black}{RGB}{34, 34, 34}
 \newcommand*{\CoverBackground}{off_black}
@@ -20,7 +23,13 @@
 	\renewcommand*{\CoverBackground}{white}
 	\renewcommand*{\CoverForeground}{black}
 }
+
+% Load Parent
 \ProcessOptions\relax
+\LoadClass[\PaperSize, \PaperOrientation]{style/score}
+
+% Default Font
+\renewcommand*{\familydefault}{\sfdefault}
 
 % Squares
 \newcommand*\squares{%
