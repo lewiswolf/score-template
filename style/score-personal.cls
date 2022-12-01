@@ -12,11 +12,20 @@
 % Default Font
 \renewcommand{\familydefault}{\sfdefault}
 
+% Cover Colours
+\definecolor{off_black}{RGB}{34, 34, 34}
+\newcommand*{\CoverBackground}{off_black}
+\newcommand*{\CoverForeground}{white}
+\DeclareOption{part}{%
+	\renewcommand*{\CoverBackground}{white}
+	\renewcommand*{\CoverForeground}{black}
+}
+
 % Squares
 \newcommand*\squares{%
 	\begin{tikzpicture}[overlay]
-		\draw[white, ultra thick](0.5\paperwidth - 63mm,-0.5\paperheight - 63mm) rectangle (0.5\paperwidth + 58.5mm,-0.5\paperheight + 58.5mm);
-		\draw[white, ultra thick](0.5\paperwidth - 58.5mm,-0.5\paperheight - 58.5mm) rectangle (0.5\paperwidth + 63mm,-0.5\paperheight + 63mm);
+		\draw[\CoverForeground, ultra thick](0.5\paperwidth - 63mm,-0.5\paperheight - 63mm) rectangle (0.5\paperwidth + 58.5mm,-0.5\paperheight + 58.5mm);
+		\draw[\CoverForeground, ultra thick](0.5\paperwidth - 58.5mm,-0.5\paperheight - 58.5mm) rectangle (0.5\paperwidth + 63mm,-0.5\paperheight + 63mm);
 		% Guides
 		% \draw[red, ultra thin](0, 2pt) rectangle (\paperwidth + 1cm,-1\paperheight);															% page border
 		% \draw[red, ultra thick](0.5\paperwidth - 63mm,-0.5\paperheight - 63mm) rectangle (0.5\paperwidth + 63mm,-0.5\paperheight + 63mm);		% box border
@@ -41,9 +50,8 @@
 		% margins
 		\newgeometry{top=-8pt, right=0pt, left=0pt, bottom=0pt}
 		% colour & shapes
-		\definecolor{bg}{RGB}{34, 34, 34}
-		\pagecolor{bg}
-		\color{white}
+		\pagecolor{\CoverBackground}
+		\color{\CoverForeground}
 		\squares
 		% composer
 		\begin{textblock*}{127mm + 1.2pt}(0.5\paperwidth - 63mm - 3pt,0.1\paperheight + 2pt)
@@ -77,8 +85,7 @@
 \newcommand*{\finalpage}{%
 	\null
 	\thispagestyle{empty}
-	\definecolor{bg}{RGB}{34, 32, 32}
-	\pagecolor{bg}
+	\pagecolor{\CoverBackground}
 	\addtocounter{page}{-1}
 	\newpage
 }
