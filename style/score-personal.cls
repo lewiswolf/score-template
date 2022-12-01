@@ -10,7 +10,7 @@
 \RequirePackage{tikz}						% drawing graphics
 
 % Default Font
-\renewcommand{\familydefault}{\sfdefault}
+\renewcommand*{\familydefault}{\sfdefault}
 
 % Cover Colours
 \definecolor{off_black}{RGB}{34, 34, 34}
@@ -20,6 +20,7 @@
 	\renewcommand*{\CoverBackground}{white}
 	\renewcommand*{\CoverForeground}{black}
 }
+\ProcessOptions\relax
 
 % Squares
 \newcommand*\squares{%
