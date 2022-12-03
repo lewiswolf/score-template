@@ -1,2 +1,11 @@
+# dir
+/unused
+
+# latex build files
+*.aux
+*.log
+*.synctex.gz
+*.synctex.gz(busy)
+
+# misc
 score.pdf
-unused

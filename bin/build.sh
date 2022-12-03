@@ -1,6 +1,23 @@
 #!/bin/bash
 
 # build all .tex files
-pdflatex --shell-escape -synctex=1 -interaction=nonstopmode -file-line-error index.tex
+for f in *
+do
+	case $f in
+	*.tex)
+		pdflatex --shell-escape -synctex=1 -interaction=nonstopmode -file-line-error $f;;
+	*)
+		continue;;
+	esac 
+done
 
 # delete all junk files
+for f in *
+do
+	case $f in
+	*.aux|*.log|*synctex.gz)
+		rm $f;;
+	*)
+		continue;;
+	esac 
+done
