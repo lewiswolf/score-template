@@ -5,7 +5,6 @@
 
 % Layout Specific Packages
 \RequirePackage{xcolor}						% change font color with \textcolor{color}{text}
-\RequirePackage[scaled=1]{helvet}			% helvetica
 \RequirePackage{tikz}						% drawing graphics
 
 % Paper Size
@@ -29,6 +28,7 @@
 \LoadClass[\PaperSize, \PaperOrientation]{style/score}
 
 % Default Font
+\RequirePackage[scaled=1]{helvet}			% helvetica
 \renewcommand*{\familydefault}{\sfdefault}
 
 % Squares
