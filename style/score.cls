@@ -6,7 +6,6 @@
 
 % Packages
 \RequirePackage[margin=2cm]{geometry}
-\RequirePackage[utf8]{inputenc}			 				% ASCII encoding
 \RequirePackage{fontspec}								% font encoding
 \RequirePackage[english]{babel}							% use this to add extra languages
 \RequirePackage{amssymb}								% maths

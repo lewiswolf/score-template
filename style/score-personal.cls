@@ -63,7 +63,7 @@
 		\color{\CoverForeground}
 		\squares
 		% composer
-		\begin{textblock*}{127mm + 1.2pt}(0.5\paperwidth - 63mm - 3pt,0.1\paperheight + 2pt)
+		\begin{textblock*}{127mm + 2.3pt}(0.5\paperwidth - 63mm - 3pt,0.1\paperheight + 2pt)
 			\fontsize{37.18pt}{0}
 			\bf \@composer
 		\end{textblock*}
