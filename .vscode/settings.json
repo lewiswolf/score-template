@@ -1,0 +1,25 @@
+{	
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "build",
+			"tools": [
+				"latexmk",
+			]
+		}
+	],
+	"latex-workshop.latex.tools": [
+		{
+			"name": "latexmk",
+			"command": "pdflatex",
+			"args": [
+				"--shell-escape",
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"%DOC%"
+			],
+			"env": {}
+		}
+	]
+}
