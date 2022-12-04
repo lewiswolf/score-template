@@ -7,9 +7,8 @@
 % Packages
 \RequirePackage[margin=2cm]{geometry}
 \RequirePackage[utf8]{inputenc}			 				% ASCII encoding
+\RequirePackage{fontspec}								% font encoding
 \RequirePackage[english]{babel}							% use this to add extra languages
-\RequirePackage[T1]{fontenc}							% font encoding
-\RequirePackage{lmodern}								% default font
 \RequirePackage{amssymb}								% maths
 \RequirePackage{mathtools}				  				% maths
 \RequirePackage[none]{hyphenat}			 				% less word breaks more kerning

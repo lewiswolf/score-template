@@ -28,8 +28,7 @@
 \LoadClass[\PaperSize, \PaperOrientation]{style/score}
 
 % Default Font
-\RequirePackage[scaled=1]{helvet}			% helvetica
-\renewcommand*{\familydefault}{\sfdefault}
+\setmainfont{Helvetica}
 
 % Squares
 \newcommand*\squares{%

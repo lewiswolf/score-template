@@ -5,7 +5,7 @@ for f in *
 do
 	case $f in
 	*.tex)
-		pdflatex --shell-escape -synctex=1 -interaction=nonstopmode -file-line-error $f;;
+		xelatex --shell-escape -synctex=1 -interaction=nonstopmode -file-line-error $f;;
 	*)
 		continue;;
 	esac 
