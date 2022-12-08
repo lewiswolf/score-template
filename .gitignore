@@ -4,6 +4,7 @@
 # latex build files
 *.aux
 *.log
+*.out
 *.synctex.gz
 *.synctex.gz(busy)
 

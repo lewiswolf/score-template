@@ -15,8 +15,24 @@
 \RequirePackage[skip=\baselineskip,indent=0pt]{parskip}	% paragraph skip formatting
 \RequirePackage[absolute,overlay]{textpos}				% absolute text positioning
 \RequirePackage{enumitem}								% list formatting
+\RequirePackage[hidelinks]{hyperref}					% makes things clickable
 \RequirePackage{graphicx}								% import images with \includegraphics{filepath}
 \RequirePackage{pdfpages}								% include pdfs with \includepdf{link}
+
+% Title Page Configuration
+\makeatletter%
+	\renewcommand*{\title}[1]{\gdef\@title{%
+		\hypersetup{pdftitle={#1}}
+		#1
+	}}
+	\newcommand*{\composer}[1]{\gdef\@composer{%
+		\hypersetup{pdfauthor={#1}}
+		#1
+	}}
+	\newcommand*{\instrumentation}[1]{\gdef\@instrumentation{%
+		#1
+	}}
+\makeatother
 
 % default list format
 \setlist{nosep}
@@ -28,4 +44,9 @@
     \thispagestyle{empty}
     \addtocounter{page}{-1}
     \newpage
+}
+
+% Credits in PDF Metadata
+\AtBeginDocument{%
+	\hypersetup{pdfcreator={Lewis Wolstanholme's Personal LaTeX Template}}
 }

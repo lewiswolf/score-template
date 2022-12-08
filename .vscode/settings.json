@@ -5,6 +5,7 @@
 			"name": "build",
 			"tools": [
 				"latexmk",
+				"latexmk",
 			]
 		}
 	],

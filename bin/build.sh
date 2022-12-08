@@ -15,7 +15,7 @@ done
 for f in *
 do
 	case $f in
-	*.aux|*.log|*synctex.gz)
+	*.aux|*.log|*.out|*synctex.gz)
 		rm $f;;
 	*)
 		continue;;

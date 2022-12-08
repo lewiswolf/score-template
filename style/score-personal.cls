@@ -45,12 +45,6 @@
 
 % Title Styles
 \makeatletter%
-	\newcommand*{\composer}[1]{\gdef\@composer{%
-		#1
-	}}
-	\newcommand*{\instrumentation}[1]{\gdef\@instrumentation{%
-		#1
-	}}
 	\renewcommand*{\maketitle}{%
 		% page style
 		\thispagestyle{empty}
