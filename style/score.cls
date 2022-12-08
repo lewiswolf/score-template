@@ -10,6 +10,7 @@
 \RequirePackage[english]{babel}							% use this to add extra languages
 \RequirePackage{amssymb}								% maths
 \RequirePackage{mathtools}				  				% maths
+\RequirePackage{musicography}							% simple music symbols
 \RequirePackage[none]{hyphenat}			 				% less word breaks more kerning
 \RequirePackage[skip=\baselineskip,indent=0pt]{parskip}	% paragraph skip formatting
 \RequirePackage[absolute,overlay]{textpos}				% absolute text positioning
