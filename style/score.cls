@@ -30,6 +30,7 @@
 		#1
 	}}
 	\newcommand*{\instrumentation}[1]{\gdef\@instrumentation{%
+		\hypersetup{pdfsubject={#1}}
 		#1
 	}}
 \makeatother
