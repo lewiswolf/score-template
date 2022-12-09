@@ -9,4 +9,5 @@
 *.synctex.gz(busy)
 
 # misc
+.DS_Store
 score.pdf
