@@ -61,22 +61,22 @@
 		% composer
 		\begin{textblock*}{127mm + 2.3pt}(0.5\paperwidth - 63mm - 3pt,0.1\paperheight + 2pt)
 			\fontsize{37.18pt}{0}
-			\bf \@composer
+			\bfseries \@composer
 		\end{textblock*}
 		% title
 		\begin{textblock*}{104mm}(0.5\paperwidth - 52mm - 7pt,0.5\paperheight - 52mm - 3.5pt)
 			\fontsize{32pt}{0}
-			\bf \@title
+			\bfseries \@title
 		\end{textblock*}
 		% instrumentation
 		\begin{textblock*}{104mm + 14pt}(0.5\paperwidth - 52mm - 6.5pt, 0.5\paperheight - 12.5pt)
 			\fontsize{16.75pt}{0}
-			\bf \openup 0.25em \@instrumentation
+			\bfseries \openup 0.25em \@instrumentation
 		\end{textblock*}
 		% date
 		\begin{textblock*}{104mm + 7pt}(0.5\paperwidth - 52mm,0.5\paperheight + 52mm - 14.5pt)
 			\fontsize{14pt}{0}
-			\flushright \bf \@date
+			\flushright \bfseries \@date
 		\end{textblock*}
 		% reset
 		\cleardoublepage{}

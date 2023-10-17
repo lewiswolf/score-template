@@ -59,14 +59,14 @@
 		% instrumentation
 		\begin{textblock*}{0.6\paperwidth}(0.3\paperwidth, 0.45\paperheight + 32pt)
 			\fontsize{20pt}{0}
-			\it \openup 0.25em \raggedright \@instrumentation
+			\itshape \openup 0.25em \raggedright \@instrumentation
 		\end{textblock*}
 		% arranger
 		\ifx\@arranger\undefined
 		\else
 			\begin{textblock*}{0.6\paperwidth}[0,1](0.3\paperwidth, 0.65\paperheight - 32pt)
 				\fontsize{18pt}{0}
-				\it \openup 0.25em \raggedright arranged by \@arranger
+				\itshape \openup 0.25em \raggedright arranged by \@arranger
 			\end{textblock*}
 		\fi
 		% line 
