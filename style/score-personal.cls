@@ -11,9 +11,11 @@
 \newcommand*{\PaperSize}{a4paper}
 \DeclareOption{a4paper}{\renewcommand*{\PaperSize}{a4paper}}
 \DeclareOption{a3paper}{\renewcommand*{\PaperSize}{a3paper}}
+
 % Paper Orientation
 \newcommand*{\PaperOrientation}{portrait}
 \DeclareOption{landscape}{\renewcommand*{\PaperSize}{landscape}}
+
 % Cover Colours
 \definecolor{off_black}{RGB}{34, 34, 34}
 \newcommand*{\CoverBackground}{off_black}
@@ -30,7 +32,7 @@
 % Default Font
 \setmainfont{Helvetica}
 
-% Squares
+% Cover Graphics
 \newcommand*\squares{%
 	\begin{tikzpicture}[overlay]
 		\draw[\CoverForeground, ultra thick](0.5\paperwidth - 63mm,-0.5\paperheight - 63mm) rectangle (0.5\paperwidth + 58.5mm,-0.5\paperheight + 58.5mm);
