@@ -15,7 +15,7 @@
 
 % Paper Orientation
 \newcommand*{\PaperOrientation}{portrait}
-\DeclareOption{landscape}{\renewcommand*{\PaperSize}{landscape}}
+\DeclareOption{landscape}{\renewcommand*{\PaperOrientation}{landscape}}
 
 % Load Parent
 \ProcessOptions\relax

@@ -14,7 +14,7 @@
 
 % Paper Orientation
 \newcommand*{\PaperOrientation}{portrait}
-\DeclareOption{landscape}{\renewcommand*{\PaperSize}{landscape}}
+\DeclareOption{landscape}{\renewcommand*{\PaperOrientation}{landscape}}
 
 % Cover Colours
 \definecolor{off_black}{RGB}{34, 34, 34}
