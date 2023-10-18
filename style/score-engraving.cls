@@ -67,7 +67,7 @@
 		\else
 			\hypersetup{pdftitle={\@title (arranged by \@arranger)}}
 			\begin{textblock*}{0.6\paperwidth}[0,1](0.3\paperwidth, 0.65\paperheight - 32pt)
-				\fontsize{18pt}{0}
+				\fontsize{20pt}{0}
 				\itshape \openup 0.25em \raggedright arranged by \@arranger
 			\end{textblock*}
 		\fi
