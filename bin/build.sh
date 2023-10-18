@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script builds all scores and parts directly from the terminal.
+# cd <your/directory> && sh build.sh
 
 # build all .tex files
 for f in *
