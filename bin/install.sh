@@ -6,4 +6,4 @@ rm -rf score-template
 rm -rf .git
 rm -rf bin
 rm .gitignore
-rm readme.md
+rm .editorconfig
