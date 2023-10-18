@@ -64,6 +64,7 @@
 			\bfseries \@composer
 		\end{textblock*}
 		% title
+		\hypersetup{pdftitle={\@title}}
 		\begin{textblock*}{104mm}(0.5\paperwidth - 52mm - 7pt,0.5\paperheight - 52mm - 3.5pt)
 			\fontsize{32pt}{0}
 			\bfseries \@title

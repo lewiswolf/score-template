@@ -22,7 +22,6 @@
 % Title Page Configuration
 \makeatletter%
 	\renewcommand*{\title}[1]{\gdef\@title{%
-		\hypersetup{pdftitle={#1}}
 		#1
 	}}
 	\newcommand*{\composer}[1]{\gdef\@composer{%
