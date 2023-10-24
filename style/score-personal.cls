@@ -1,5 +1,5 @@
 % spell-checker: disable
-% spellchecker: disable
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{style/score-personal}[Lewis Wolstanholme Compositions]
 
