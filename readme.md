@@ -64,5 +64,4 @@ Create your score and parts in sibelius, as you typically would (ideally using `
 	\emptypage{}
 	\finalpage{}
 \end{document}
-
 ```
