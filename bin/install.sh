@@ -9,3 +9,4 @@ rm -rf .git
 rm -rf bin
 rm .gitignore
 rm .editorconfig
+rm readme.md
