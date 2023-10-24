@@ -43,7 +43,7 @@ Create your score and parts in sibelius, as you typically would (ideally using `
 \documentclass[a4paper]{style/score-engraving}
 
 \begin{document}
-	% Define your work.
+	% define your work.
 	\composer{Lewis Wolstanholme}
 	\title{Title}
 	\instrumentation{instrumentation}
