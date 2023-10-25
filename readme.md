@@ -4,7 +4,7 @@ LaTeX template for making full scores and parts.
 
 # Dependencies
 
-This repository was designed and test on MacOS, but can be used across other platforms. For MacOS users specifically, the dependencies are:
+This repository was designed and tested on MacOS, but can be used across other platforms. For MacOS users specifically, the dependencies are:
 
 - [MacTex](https://formulae.brew.sh/cask/mactex-no-gui)
 
@@ -12,7 +12,7 @@ In general, you can work with this project in any editor, purely using the termi
 
 # Install & Usage
 
-There are two commands packaged with this repository, that I recommend you use as [bash aliases](https://linuxize.com/post/how-to-create-bash-aliases/). Mine, corresponding to `./bin/build.sh` and `./bin/install.sh` respectively, are:
+There are two commands packaged with this repository. I recommend you to use them as [bash aliases](https://linuxize.com/post/how-to-create-bash-aliases/). Mine, corresponding to `./bin/build.sh` and `./bin/install.sh` respectively, are:
 
 ```bash
 alias build-score="sh ~/Documents/Code/score-template-build.sh"
@@ -40,20 +40,18 @@ Create your score and parts in sibelius, as you typically would (ideally using `
 ```latex
 % paper options: [a4paper, a3paper]
 % orientation options: [landscape, portrait]
+% part option: [part]
 \documentclass[a4paper]{style/score-engraving}
 
 \begin{document}
-	% define your work
 	\composer{Lewis Wolstanholme}
 	\title{Title}
 	\instrumentation{instrumentation}
-	% \arranger{} % if using style/score-engraving
+	% \arranger{} % optional if using style/score-engraving
 	\date{year}
-
 	\maketitle
-	\emptypage{}
-	\pagenumbering{roman}
 
+	\pagenumbering{roman}
 	\section*{Performance Instructions}
 	Write your performance instructions here!
 
@@ -61,7 +59,6 @@ Create your score and parts in sibelius, as you typically would (ideally using `
 	\pagenumbering{arabic}
 	% add the path to your exported score here
 	\includepdf[pages=-]{./pdfs/score.pdf}
-	\emptypage{}
 	\finalpage{}
 \end{document}
 ```

@@ -21,9 +21,7 @@
 
 % Title Page Configuration
 \makeatletter%
-	\renewcommand*{\title}[1]{\gdef\@title{%
-		#1
-	}}
+	\renewcommand*{\title}[1]{\gdef\@title{#1}}
 	\newcommand*{\composer}[1]{\gdef\@composer{%
 		\hypersetup{pdfauthor={#1}}
 		#1
@@ -34,16 +32,27 @@
 	}}
 \makeatother
 
-% default list format
+% Default List Format
 \setlist{nosep}
 
-% macro for creating an empty page
+% Macro for Creating an Empty Page
 \newcommand*{\emptypage}{%
 	\newpage
     \null
     \thispagestyle{empty}
     \addtocounter{page}{-1}
     \newpage
+}
+
+% Macro for Creating the final cover
+\newcommand*{\finalpage}{%
+	\newpage
+	\thispagestyle{empty}
+	\null
+	\newpage
+	\pagecolor{\CoverBackground}
+	\thispagestyle{empty}
+	\null
 }
 
 % Credits in PDF Metadata

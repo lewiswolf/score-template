@@ -55,8 +55,8 @@
 		% margins
 		\newgeometry{top=-8pt, right=0pt, left=0pt, bottom=0pt}
 		% colour & shapes
-		\pagecolor{\CoverBackground}
 		\color{\CoverForeground}
+		\pagecolor{\CoverBackground}
 		\squares
 		% composer
 		\begin{textblock*}{127mm + 2.3pt}(0.5\paperwidth - 63mm - 3pt,0.1\paperheight + 2pt)
@@ -80,18 +80,11 @@
 			\flushright \bfseries \@date
 		\end{textblock*}
 		% reset
+		\null
 		\cleardoublepage{}
 		\restoregeometry
-		\pagecolor{white}
 		\color{black}
+		\pagecolor{white}
+		\emptypage{}
 	}
 \makeatother
-
-% Final Page
-\newcommand*{\finalpage}{%
-	\null
-	\thispagestyle{empty}
-	\pagecolor{\CoverBackground}
-	\addtocounter{page}{-1}
-	\newpage
-}

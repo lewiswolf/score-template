@@ -3,6 +3,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{style/score-engraving}[Lewis Wolstanholme Engravings]
 
+% Layout Specific Packages
+\RequirePackage{xcolor}						% change font color with \textcolor{color}{text}
+
 % Paper Size
 \newcommand*{\PaperSize}{a4paper}
 \newcommand*{\TextSizeMultiplier}{0}
@@ -17,16 +20,20 @@
 \newcommand*{\PaperOrientation}{portrait}
 \DeclareOption{landscape}{\renewcommand*{\PaperOrientation}{landscape}}
 
+% Cover Colours
+\newcommand*{\CoverBackground}{white}
+\newcommand*{\CoverForeground}{black}
+\DeclareOption{part}{%
+	\renewcommand*{\CoverBackground}{white}
+	\renewcommand*{\CoverForeground}{black}
+}
+
 % Load Parent
 \ProcessOptions\relax
 \LoadClass[\PaperSize, \PaperOrientation]{style/score}
 
 % Default Font
 \setmainfont{Tinos}
-
-% Cover Colours
-\newcommand*{\CoverBackground}{white}
-\newcommand*{\CoverForeground}{black}
 
 \makeatletter%
 	% Arranger
@@ -41,6 +48,7 @@
 		% margins
 		\newgeometry{top=0pt, right=0pt, left=0pt, bottom=0pt}
 		% colour
+		\color{\CoverForeground}
 		\pagecolor{\CoverBackground}
 		% composer
 		\begin{textblock*}{0.8\paperwidth}(0.1\paperwidth,0.125\paperheight - 10pt)
@@ -81,18 +89,11 @@
 			\bfseries \openup 0.25em \@date
 		\end{textblock*}
 		% reset
+		\null
 		\cleardoublepage{}
 		\restoregeometry
-		\normalsize
-		\null
+		\color{black}
+		\pagecolor{white}
+		\emptypage{}
 	}
 \makeatother
-
-% Final Page
-\newcommand*{\finalpage}{%
-	\null
-	\thispagestyle{empty}
-	\pagecolor{\CoverBackground}
-	\addtocounter{page}{-1}
-	\newpage
-}

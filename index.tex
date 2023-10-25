@@ -1,25 +1,22 @@
 % paper options: [a4paper, a3paper]
 % orientation options: [landscape, portrait]
-% part option: [part] (if using style/score-personal)
+% part option: [part]
 \documentclass[a4paper]{style/score-engraving}
 
 \begin{document}
 	\composer{Lewis Wolstanholme}
 	\title{Title}
 	\instrumentation{instrumentation}
-	% \arranger{} % if using style/score-engraving
+	% \arranger{} % optional if using style/score-engraving
 	\date{year}
-
 	\maketitle
-	\emptypage{}
+	
 	\pagenumbering{roman}
-
 	\section*{Performance Instructions}
 	\dots
 
 	\newpage
 	\pagenumbering{arabic}
 	% \includepdf[pages=-]{./pdfs/score.pdf}
-	\emptypage{}
 	\finalpage{}
 \end{document}
