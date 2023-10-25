@@ -8,13 +8,8 @@
 
 % Paper Size
 \newcommand*{\PaperSize}{a4paper}
-\newcommand*{\TextSizeMultiplier}{0}
-\DeclareOption{a4paper}{%
-	\renewcommand*{\PaperSize}{a4paper}
-}
-\DeclareOption{a3paper}{%
-	\renewcommand*{\PaperSize}{a3paper}
-}
+\DeclareOption{a4paper}{\renewcommand*{\PaperSize}{a4paper}}
+\DeclareOption{a3paper}{\renewcommand*{\PaperSize}{a3paper}}
 
 % Paper Orientation
 \newcommand*{\PaperOrientation}{portrait}
