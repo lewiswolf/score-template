@@ -1,4 +1,8 @@
 {	
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"latex-workshop.bibtex-format.tab": "tab",
+	"latex-workshop.latex.autoBuild.run": "onSave",
 	"latex-workshop.latex.autoClean.run": "onBuilt",
 	"latex-workshop.latex.recipes": [
 		{
@@ -22,5 +26,16 @@
 			],
 			"env": {}
 		}
-	]
+	],
+	"latex-workshop.view.pdf.viewer": "tab",
+	"cSpell.enabledLanguageIds": ["latex", "markdown", "cls"],
+	// add extra languages globally
+	"cSpell.language": "en-GB",
+	"cSpell.overrides": [
+		// add extra languages per file
+        // {
+        //     "filename": "**/src/...",
+        //     "language": "en-GB, de-DE, es-ES"
+        // },
+    ]
 }

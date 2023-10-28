@@ -8,7 +8,7 @@ This repository was designed and tested on MacOS, but can be used across other p
 
 - [MacTex](https://formulae.brew.sh/cask/mactex-no-gui)
 
-In general, you can work with this project in any editor, purely using the terminal. However, multiple shortcuts have been included in the repository for ease of use alongside [VSCode](https://formulae.brew.sh/cask/visual-studio-code). When you use the project for the first time, VScode will prompt you to install the required extensions.
+In general, you can work with this project in any editor, purely using the terminal. However, multiple shortcuts have been included in this repository for ease of use alongside [VSCode](https://formulae.brew.sh/cask/visual-studio-code). When you use the project for the first time, VScode will prompt you to install the required extensions.
 
 # Install & Usage
 
