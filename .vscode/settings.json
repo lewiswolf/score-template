@@ -28,6 +28,6 @@
 		}
 	],
 	"latex-workshop.view.pdf.viewer": "tab",
-	"cSpell.enabledLanguageIds": ["latex", "markdown", "cls"],
+	"cSpell.enabledLanguageIds": ["latex", "markdown"],
 	"cSpell.language": "en-GB",
 }
