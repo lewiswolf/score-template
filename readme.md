@@ -12,11 +12,11 @@ In general, you can work with this project in any editor, purely using the termi
 
 # Install & Usage
 
-There are two commands packaged with this repository. I recommend you to use them as [bash aliases](https://linuxize.com/post/how-to-create-bash-aliases/). Mine, corresponding to `./bin/build.sh` and `./bin/install.sh` respectively, are:
+There are two commands packaged with this repository. I recommend you to use them as [bash aliases](https://linuxize.com/post/how-to-create-bash-aliases/).
 
 ```bash
-alias build-score="sh ~/Documents/Code/score-template-build.sh"
-alias mkscore="sh ~/Documents/Code/score-template-install.sh"
+alias build-score="sh <static/path/to/build.sh>"
+alias make-score="sh <static/path/to/install.sh>"
 ```
 
 Then, when you begin a project, run:
@@ -24,7 +24,7 @@ Then, when you begin a project, run:
 ```bash
 mkdir <my_dir>
 cd my_dir
-mkscore
+make-score
 ```
 
 And then to build the project, with scores and parts, run:
@@ -35,7 +35,7 @@ build-score
 
 # LaTeX Configuration
 
-Create your score and parts in sibelius, as you typically would (ideally using `template.sib`, but that's up to you). Then for each exported score or part, create a copy of `index.tex`, and configure as follows.
+Create your score and parts in sibelius, as you typically would (ideally using `score.sib`, but that's up to you). Then for each exported score or part, create a copy of `score.tex`, and configure as follows.
 
 ```latex
 % paper options: [a4paper, a3paper]
